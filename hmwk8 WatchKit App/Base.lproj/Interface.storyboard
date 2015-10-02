@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="hmwk8_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="297" alignment="left" layout="vertical" id="gGk-KP-gb9">
+                            <items>
+                                <table alignment="left" id="efi-QC-GE5">
+                                    <items>
+                                        <tableRow identifier="cell" id="M3Y-IG-8hn" customClass="tablecell" customModule="hmwk8_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="EGb-Va-XJA">
+                                                <items>
+                                                    <imageView width="52" height="37" alignment="left" image="images.jpeg" id="wzB-dC-jVW"/>
+                                                    <label width="72.5" height="35.5" alignment="center" text="label" textAlignment="center" id="e8s-Q7-zli"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="diceimage" destination="wzB-dC-jVW" id="jDq-Cv-7Qg"/>
+                                                <outlet property="dicelabel" destination="e8s-Q7-zli" id="fay-2O-ZNf"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                                <separator alignment="left" id="hoL-zt-FH8"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="thetable1" destination="efi-QC-GE5" id="R65-LJ-gB8"/>
+                        <segue destination="vEU-ab-uOv" kind="relationship" relationship="nextPage" id="i0a-DJ-nPG"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="208" y="139"/>
+        </scene>
+        <!--Pickerexampleic-->
+        <scene sceneID="J6C-g8-YwJ">
+            <objects>
+                <controller hidesWhenLoading="NO" id="vEU-ab-uOv" customClass="pickerexampleic" customModule="hmwk8_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="whichone" id="20y-zJ-K3R">
+                            <connections>
+                                <action selector="whichonebuttonpressed" destination="vEU-ab-uOv" id="00S-kP-UdF"/>
+                            </connections>
+                        </button>
+                        <picker width="134" height="100" alignment="left" style="stack" focusStyle="sequence" indicatorMode="shownWhileFocused" id="1CB-Pk-Lbo">
+                            <connections>
+                                <action selector="onclick:" destination="vEU-ab-uOv" id="xIu-Q8-37G"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="pickerout" destination="1CB-Pk-Lbo" id="Kxk-Pf-aDo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="411" y="66"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +82,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="hmwk8_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

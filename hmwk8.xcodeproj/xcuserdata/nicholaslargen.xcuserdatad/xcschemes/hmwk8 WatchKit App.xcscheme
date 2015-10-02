@@ -5,6 +5,50 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F766DEF41BBC4702002878BA"
+               BuildableName = "hmwk8 WatchKit App.app"
+               BlueprintName = "hmwk8 WatchKit App"
+               ReferencedContainer = "container:hmwk8.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F766DECC1BBC4701002878BA"
+               BuildableName = "hmwk8.app"
+               BlueprintName = "hmwk8"
+               ReferencedContainer = "container:hmwk8.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F766DF031BBC4702002878BA"
+               BuildableName = "hmwk8 WatchKit Extension.appex"
+               BlueprintName = "hmwk8 WatchKit Extension"
+               ReferencedContainer = "container:hmwk8.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -13,6 +57,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F766DEF41BBC4702002878BA"
+            BuildableName = "hmwk8 WatchKit App.app"
+            BlueprintName = "hmwk8 WatchKit App"
+            ReferencedContainer = "container:hmwk8.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +79,27 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/hmwk8 WatchKit App">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F766DEF41BBC4702002878BA"
+            BuildableName = "hmwk8 WatchKit App.app"
+            BlueprintName = "hmwk8 WatchKit App"
+            ReferencedContainer = "container:hmwk8.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F766DEF41BBC4702002878BA"
+            BuildableName = "hmwk8 WatchKit App.app"
+            BlueprintName = "hmwk8 WatchKit App"
+            ReferencedContainer = "container:hmwk8.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +109,27 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/hmwk8 WatchKit App">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F766DEF41BBC4702002878BA"
+            BuildableName = "hmwk8 WatchKit App.app"
+            BlueprintName = "hmwk8 WatchKit App"
+            ReferencedContainer = "container:hmwk8.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F766DEF41BBC4702002878BA"
+            BuildableName = "hmwk8 WatchKit App.app"
+            BlueprintName = "hmwk8 WatchKit App"
+            ReferencedContainer = "container:hmwk8.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
